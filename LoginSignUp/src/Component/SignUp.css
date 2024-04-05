@@ -1,0 +1,113 @@
+.truck{
+    margin-top: 70px;
+   margin-left: 232px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+}
+.container{
+    display: flex;
+    flex-direction:column;
+    background: white;
+    width: 40%;
+    float: right;
+    margin: auto;
+    padding-bottom: 30px;
+    margin-top: 70px;
+    margin-right: 170px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.headers{
+    text-align: center;
+    margin: 10px;
+    flex-direction: column;
+    gap:9px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.text{
+    color:black;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+.underline{
+    background:black;
+    width: 380px;
+    height: 7px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5px;
+   
+
+}
+.text1{
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    margin-top: 10px;
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    border-radius: 4px;
+    margin-top:30px ;
+    padding: 10px;
+    border: 1px solid rgb(177, 177, 177); 
+    width: 400px;
+    font-size: 14px;
+}
+input:hover{
+    border:1px solid black ;
+}
+.forgot-password{
+    margin-left: 66%;
+    margin-top: 20px;
+    color: blueviolet;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.forgot-password a{
+    text-decoration: none;
+}
+.submit{
+    background: black;
+    color: white;
+    border: 1px solid  black;
+    width:423px ;
+    margin: auto;
+    padding: 8px;
+    margin-top: 20px;
+    margin-left: 56px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.submit:hover{
+    background: rgb(49, 49, 49);
+}
+.or{
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.google{
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.google a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+  
+}
+.google img{
+    margin-top:-7px ;
+}
