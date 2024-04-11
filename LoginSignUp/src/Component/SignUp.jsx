@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './SignUp.css';
-import axios from 'axios'; // Import Axios for making HTTP requests
+import axios from 'axios';
 
 const SignUp = () => {
   const [email, setEmail] = useState('');
@@ -18,7 +18,6 @@ const SignUp = () => {
     event.preventDefault();
 
     try {
-      // Send form data to the backend server
       const response = await axios.post('http://localhost:5000/signup', {
         email,
         password,
@@ -26,7 +25,6 @@ const SignUp = () => {
 
       console.log('Response:', response.data);
       
-      // Clear the form fields after successful submission
       setEmail('');
       setPassword('');
     } catch (error) {
@@ -35,16 +33,17 @@ const SignUp = () => {
   };
 
   return (
-    <>
-      <img
-        src="https://media.istockphoto.com/id/1465157700/photo/brightly-red-colored-semi-truck-speeding-on-a-two-lane-highway-with-cars-in-background-under.webp?b=1&s=170667a&w=0&k=20&c=sPYVxhIZwoQ9__O8KukZ5eILdhzSMvwUYrS3n11FGx4="
-        alt=""
-        className="truck"
-        width={499}
-        height={498}
-      />
+    <div className="container">
+      <div className="truck">
+        <img
+          src="https://media.istockphoto.com/id/1465157700/photo/brightly-red-colored-semi-truck-speeding-on-a-two-lane-highway-with-cars-in-background-under.webp?b=1&s=170667a&w=0&k=20&c=sPYVxhIZwoQ9__O8KukZ5eILdhzSMvwUYrS3n11FGx4="
+          alt=""
+          width={499}
+          height={498}
+        />
+      </div>
 
-      <div className="container">
+      <div className="signup-data">
         <div className="headers">
           <div className="text">Sign Up to APML</div>
           <div className="underline"></div>
@@ -90,7 +89,7 @@ const SignUp = () => {
           <a href="/">Sign in with Google</a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
